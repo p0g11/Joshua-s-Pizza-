@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #e6eaff;
+    overflow: hidden;
+    cursor: url(cursor.png), auto;
+
+}
+img{
+    position: absolute;
+    right: 1%;
+    width: 54%;
+    animation: 1s animate ease-in-out;
+    bottom: 5%;
+}
+img{
+    position: absolute;
+    right: 1%;
+    width: 54%;
+    animation: 1s animate ease-in-out;
+    bottom: 5%;
+}
+img{
+    position: absolute;
+    right: 1%;
+    width: 54%;
+    animation: 1s animate ease-in-out;
+    bottom: 5%;
+    }
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: scale(.5);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.navbar ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+.navbar ul li{
+    display:  inline-block;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 25px 50px;
+    border: 1px solid black transparent;
+    transition: 0.6s ease;
+}
+.navbar ul li a:hover{
+background-color: #fff;
+color:palevioletred;
+
+}
+.content{
+    position: absolute;
+    top: 27vh;
+    left: 5%;
+    width: 33%;
+}
+.content h1{
+    font-size: 60px;
+}
+hr{
+    margin-top: 30px;
+    width: 20%;
+    height: 6px;
+    background: #000;
+}
+.content p{
+    margin-top: 30px;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Courier New';
+
+}
+.button{
+    width: 100%;
+    position: absolute;
+    top: 125%;
+    transform: translateY(-50%);
+    text-align: center;
+
+}
+.btn{
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px;
+    border: 1px solid #dfa167;
+    transition: 0.6s ease;
+
+}
+.btn:hover{
+    background-color: #dfa167;
+    color: #fff;
+}
+#Alert
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: #dfa167;
+
+}
+
+

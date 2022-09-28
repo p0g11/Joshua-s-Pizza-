@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Joshua's Pizza Delivery</title>
+	<script src="script.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li> <a href="Home.html"> Home </a></li>
+            <li> <a href="Order.html"> Order </a></li>
+            <li> <a href="Gallery.html"> Gallery</a></li>
+            <li> <a href="Contact.html"> Contact us </a></li>
+			<li> <a href="About us.html"> About us</a></li>
+        </ul>
+    <style type=text/css> 
+ body{
+    background: #e6eaff;
+	cursor: url(cursor.png), auto;
+ }
+  .navbar ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+.navbar ul li{
+    display:  inline-block;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 25px 50px;
+    border: 1px solid black transparent;
+    transition: 0.6s ease;
+}
+.navbar ul li a:hover{
+background-color: #fff;
+color:palevioletred;
+}
+
+/* headers */
+
+h1{
+	text-align: center;
+    font-family: sans-serif;
+    font-size: 200%;
+
+}
+h2{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 100%;
+
+}
+
+/*Start - table style*/
+table tr td input[type="text"], table tr td input[type="email"] {
+	float: right;
+
+
+
+
+}
+
+table tr th {
+	text-align: left;
+	padding-left: 20px;
+}
+
+#submit {
+	padding: 8px 15px;
+	margin-top: 10px;
+	background-color: orangered;
+	color: white;
+	font-size: 15px;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+    </style>
+    
+        
+	<h1 style="text-align: center">Joshua's Pizza Delivery</h1>
+<h2 style="text-align: center">Online Order Form</h2>
+
+	<!-- Pizza Delivery Form -->
+	
+    
+		<!-- Data inside table -->
+		<table align="center" cellpadding="5">
+			<tr>
+				<td>
+					<!-- Name -->
+					<p>
+						<label>*Name: </label>
+						<input type="text" name="name" id="name">
+					</p>
+
+					<!-- Address -->
+					<p>
+						<label>*Address: </label>
+						<input type="text" name="address" id="address">
+					</p>
+                    <!-- Town/City -->
+					<p>
+						<label>*Town/City: </label>
+						<input type="text" name="town/city" id="town/city"> 
+                        
+                     <!-- Postcode -->
+					<p>
+						<label>*Postcode: </label>
+						<input type="text" name="postcode" id="postcode">
+					</p></br></br></br>
+
+						
+				</td>
+				<td colspan="2">
+					<!-- Telephone -->
+					<p>
+						<label>*Tel: </label>
+						<input type="text" name="tel" id="tel">
+					</p>
+
+					<!-- Email -->
+					<p>
+						<label>*Email: </label>
+						<input type="email" name="email" id="email">
+					</p> <br/></br></br></br></br></br></br>
+        
+
+                    
+                
+				</td>
+			</tr>
+           
+			<!-- Choics Options -->
+           
+			<tr>
+				<th>Topping</th>
+				<th>Size</th>
+				<th>Extras</th>
+			</tr>
+
+			<!-- Row 1 -->
+			<tr>
+				<td><input type="radio" name="type" value="Hawaiian Pizza">Hawaiian Pizza</td>
+				<td><input type="radio" name="size" value="small" value="Small">Small</td>
+				<td><input type="checkbox" name="extra" value="Mushrooms">Mushrooms</td>
+			</tr>
+
+			<!-- Row 2 -->
+			<tr>
+				<td><input type="radio" name="type" value="BBQ Chicken Pizza">BBQ Chicken Pizza</td>
+				<td><input type="radio" name="size" value="Medium">Medium</td>
+				<td><input type="checkbox" name="extra" value="Green Peppers">Green Peppers</td>
+			</tr>
+
+			<!-- Row 3 -->
+			<tr>
+				<td><input type="radio" name="type" value="Meat Pizza">Meat Pizza</td>
+				<td><input type="radio" name="size" value="Large">Large</td>
+				<td><input type="checkbox" name="extra" value="Anchovies">Anchovies</td>
+			</tr>
+
+			<!-- Row 4 -->
+			<tr>
+				<td></td>
+				<td></td>
+				<td><input type="checkbox" name="extra" value="Extra Cheese">Extra Cheese</td>
+			</tr>
+
+			<!-- Delivery Time -->
+			<tr>
+				<td>
+					<label>Preffered Delivery Time: </label>
+				</td>
+				<td colspan="2">
+					<input type="time" name="delivery_time" id="delivery_time">
+				</td>
+			</tr>
+
+			<!-- Delivery Instruction -->
+			<tr>
+				<td>
+					<label>Delivery Instructions: </label>
+				</td>
+				<td colspan="2">
+					<textarea rows="5" cols="30" name="instuctions" id="instuctions"></textarea>
+				</td>
+			</tr>
+
+			<!-- Submit Button -->
+			<tr>
+				<td colspan="3" align="center">
+					<script src="script.js"></script>
+					
+					<button onclick="submit()">Submit</button>
+				
+					<!--<a href="script.js"button type="submit" name="submit" id="submit">Submit Order</button></a>-->
+					
+					<!--<button type="submit" name="submit" id="submit">Submit Order</button>-->
+				</td>
+			</tr>
+        
+		</table>
+	</form>
+
+</body>
+</html>
